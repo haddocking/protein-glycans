@@ -1,0 +1,26 @@
+assign (resi 89 and segid A)
+(
+       (resi 2 and segid B)
+) 2.0 2.0 0.0
+assign (resi 91 and segid A)
+(
+       (resi 2 and segid B)
+) 2.0 2.0 0.0
+assign (resi 93 and segid A)
+(
+       (resi 2 and segid B)
+) 2.0 2.0 0.0
+assign (resi 97 and segid A)
+(
+       (resi 2 and segid B)
+) 2.0 2.0 0.0
+assign (resi 2 and segid B)
+(
+       (resi 89 and segid A)
+        or
+       (resi 91 and segid A)
+        or
+       (resi 93 and segid A)
+        or
+       (resi 97 and segid A)
+) 2.0 2.0 0.0

@@ -1,0 +1,160 @@
+assign (resi 520 and segid A)
+(
+       (resi 1 and segid B)
+        or
+       (resi 2 and segid B)
+        or
+       (resi 3 and segid B)
+) 2.0 2.0 0.0
+assign (resi 522 and segid A)
+(
+       (resi 1 and segid B)
+        or
+       (resi 2 and segid B)
+        or
+       (resi 3 and segid B)
+) 2.0 2.0 0.0
+assign (resi 523 and segid A)
+(
+       (resi 1 and segid B)
+        or
+       (resi 2 and segid B)
+        or
+       (resi 3 and segid B)
+) 2.0 2.0 0.0
+assign (resi 528 and segid A)
+(
+       (resi 1 and segid B)
+        or
+       (resi 2 and segid B)
+        or
+       (resi 3 and segid B)
+) 2.0 2.0 0.0
+assign (resi 315 and segid A)
+(
+       (resi 1 and segid B)
+        or
+       (resi 2 and segid B)
+        or
+       (resi 3 and segid B)
+) 2.0 2.0 0.0
+assign (resi 596 and segid A)
+(
+       (resi 1 and segid B)
+        or
+       (resi 2 and segid B)
+        or
+       (resi 3 and segid B)
+) 2.0 2.0 0.0
+assign (resi 597 and segid A)
+(
+       (resi 1 and segid B)
+        or
+       (resi 2 and segid B)
+        or
+       (resi 3 and segid B)
+) 2.0 2.0 0.0
+assign (resi 598 and segid A)
+(
+       (resi 1 and segid B)
+        or
+       (resi 2 and segid B)
+        or
+       (resi 3 and segid B)
+) 2.0 2.0 0.0
+assign (resi 312 and segid A)
+(
+       (resi 1 and segid B)
+        or
+       (resi 2 and segid B)
+        or
+       (resi 3 and segid B)
+) 2.0 2.0 0.0
+assign (resi 379 and segid A)
+(
+       (resi 1 and segid B)
+        or
+       (resi 2 and segid B)
+        or
+       (resi 3 and segid B)
+) 2.0 2.0 0.0
+assign (resi 380 and segid A)
+(
+       (resi 1 and segid B)
+        or
+       (resi 2 and segid B)
+        or
+       (resi 3 and segid B)
+) 2.0 2.0 0.0
+assign (resi 1 and segid B)
+(
+       (resi 520 and segid A)
+        or
+       (resi 522 and segid A)
+        or
+       (resi 523 and segid A)
+        or
+       (resi 528 and segid A)
+        or
+       (resi 315 and segid A)
+        or
+       (resi 596 and segid A)
+        or
+       (resi 597 and segid A)
+        or
+       (resi 598 and segid A)
+        or
+       (resi 312 and segid A)
+        or
+       (resi 379 and segid A)
+        or
+       (resi 380 and segid A)
+) 2.0 2.0 0.0
+assign (resi 2 and segid B)
+(
+       (resi 520 and segid A)
+        or
+       (resi 522 and segid A)
+        or
+       (resi 523 and segid A)
+        or
+       (resi 528 and segid A)
+        or
+       (resi 315 and segid A)
+        or
+       (resi 596 and segid A)
+        or
+       (resi 597 and segid A)
+        or
+       (resi 598 and segid A)
+        or
+       (resi 312 and segid A)
+        or
+       (resi 379 and segid A)
+        or
+       (resi 380 and segid A)
+) 2.0 2.0 0.0
+assign (resi 3 and segid B)
+(
+       (resi 520 and segid A)
+        or
+       (resi 522 and segid A)
+        or
+       (resi 523 and segid A)
+        or
+       (resi 528 and segid A)
+        or
+       (resi 315 and segid A)
+        or
+       (resi 596 and segid A)
+        or
+       (resi 597 and segid A)
+        or
+       (resi 598 and segid A)
+        or
+       (resi 312 and segid A)
+        or
+       (resi 379 and segid A)
+        or
+       (resi 380 and segid A)
+) 2.0 2.0 0.0

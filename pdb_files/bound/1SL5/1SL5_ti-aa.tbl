@@ -1,0 +1,104 @@
+assign (resi 97 and segid A)
+(
+       (resi 3 and segid B)
+        or
+       (resi 4 and segid B)
+) 2.0 2.0 0.0
+assign (resi 99 and segid A)
+(
+       (resi 3 and segid B)
+        or
+       (resi 4 and segid B)
+) 2.0 2.0 0.0
+assign (resi 102 and segid A)
+(
+       (resi 3 and segid B)
+        or
+       (resi 4 and segid B)
+) 2.0 2.0 0.0
+assign (resi 113 and segid A)
+(
+       (resi 3 and segid B)
+        or
+       (resi 4 and segid B)
+) 2.0 2.0 0.0
+assign (resi 114 and segid A)
+(
+       (resi 3 and segid B)
+        or
+       (resi 4 and segid B)
+) 2.0 2.0 0.0
+assign (resi 115 and segid A)
+(
+       (resi 3 and segid B)
+        or
+       (resi 4 and segid B)
+) 2.0 2.0 0.0
+assign (resi 116 and segid A)
+(
+       (resi 3 and segid B)
+        or
+       (resi 4 and segid B)
+) 2.0 2.0 0.0
+assign (resi 119 and segid A)
+(
+       (resi 3 and segid B)
+        or
+       (resi 4 and segid B)
+) 2.0 2.0 0.0
+assign (resi 61 and segid A)
+(
+       (resi 3 and segid B)
+        or
+       (resi 4 and segid B)
+) 2.0 2.0 0.0
+assign (resi 95 and segid A)
+(
+       (resi 3 and segid B)
+        or
+       (resi 4 and segid B)
+) 2.0 2.0 0.0
+assign (resi 3 and segid B)
+(
+       (resi 97 and segid A)
+        or
+       (resi 99 and segid A)
+        or
+       (resi 102 and segid A)
+        or
+       (resi 113 and segid A)
+        or
+       (resi 114 and segid A)
+        or
+       (resi 115 and segid A)
+        or
+       (resi 116 and segid A)
+        or
+       (resi 119 and segid A)
+        or
+       (resi 61 and segid A)
+        or
+       (resi 95 and segid A)
+) 2.0 2.0 0.0
+assign (resi 4 and segid B)
+(
+       (resi 97 and segid A)
+        or
+       (resi 99 and segid A)
+        or
+       (resi 102 and segid A)
+        or
+       (resi 113 and segid A)
+        or
+       (resi 114 and segid A)
+        or
+       (resi 115 and segid A)
+        or
+       (resi 116 and segid A)
+        or
+       (resi 119 and segid A)
+        or
+       (resi 61 and segid A)
+        or
+       (resi 95 and segid A)
+) 2.0 2.0 0.0

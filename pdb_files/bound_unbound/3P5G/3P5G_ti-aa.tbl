@@ -1,0 +1,132 @@
+assign (resi 96 and segid A)
+(
+       (resi 1 and segid B)
+        or
+       (resi 2 and segid B)
+        or
+       (resi 3 and segid B)
+) 2.0 2.0 0.0
+assign (resi 102 and segid A)
+(
+       (resi 1 and segid B)
+        or
+       (resi 2 and segid B)
+        or
+       (resi 3 and segid B)
+) 2.0 2.0 0.0
+assign (resi 110 and segid A)
+(
+       (resi 1 and segid B)
+        or
+       (resi 2 and segid B)
+        or
+       (resi 3 and segid B)
+) 2.0 2.0 0.0
+assign (resi 111 and segid A)
+(
+       (resi 1 and segid B)
+        or
+       (resi 2 and segid B)
+        or
+       (resi 3 and segid B)
+) 2.0 2.0 0.0
+assign (resi 85 and segid A)
+(
+       (resi 1 and segid B)
+        or
+       (resi 2 and segid B)
+        or
+       (resi 3 and segid B)
+) 2.0 2.0 0.0
+assign (resi 86 and segid A)
+(
+       (resi 1 and segid B)
+        or
+       (resi 2 and segid B)
+        or
+       (resi 3 and segid B)
+) 2.0 2.0 0.0
+assign (resi 87 and segid A)
+(
+       (resi 1 and segid B)
+        or
+       (resi 2 and segid B)
+        or
+       (resi 3 and segid B)
+) 2.0 2.0 0.0
+assign (resi 88 and segid A)
+(
+       (resi 1 and segid B)
+        or
+       (resi 2 and segid B)
+        or
+       (resi 3 and segid B)
+) 2.0 2.0 0.0
+assign (resi 90 and segid A)
+(
+       (resi 1 and segid B)
+        or
+       (resi 2 and segid B)
+        or
+       (resi 3 and segid B)
+) 2.0 2.0 0.0
+assign (resi 1 and segid B)
+(
+       (resi 96 and segid A)
+        or
+       (resi 102 and segid A)
+        or
+       (resi 110 and segid A)
+        or
+       (resi 111 and segid A)
+        or
+       (resi 85 and segid A)
+        or
+       (resi 86 and segid A)
+        or
+       (resi 87 and segid A)
+        or
+       (resi 88 and segid A)
+        or
+       (resi 90 and segid A)
+) 2.0 2.0 0.0
+assign (resi 2 and segid B)
+(
+       (resi 96 and segid A)
+        or
+       (resi 102 and segid A)
+        or
+       (resi 110 and segid A)
+        or
+       (resi 111 and segid A)
+        or
+       (resi 85 and segid A)
+        or
+       (resi 86 and segid A)
+        or
+       (resi 87 and segid A)
+        or
+       (resi 88 and segid A)
+        or
+       (resi 90 and segid A)
+) 2.0 2.0 0.0
+assign (resi 3 and segid B)
+(
+       (resi 96 and segid A)
+        or
+       (resi 102 and segid A)
+        or
+       (resi 110 and segid A)
+        or
+       (resi 111 and segid A)
+        or
+       (resi 85 and segid A)
+        or
+       (resi 86 and segid A)
+        or
+       (resi 87 and segid A)
+        or
+       (resi 88 and segid A)
+        or
+       (resi 90 and segid A)
+) 2.0 2.0 0.0

@@ -1,0 +1,104 @@
+assign (resi 161 and segid A)
+(
+       (resi 1 and segid B)
+        or
+       (resi 2 and segid B)
+        or
+       (resi 3 and segid B)
+) 2.0 2.0 0.0
+assign (resi 130 and segid A)
+(
+       (resi 1 and segid B)
+        or
+       (resi 2 and segid B)
+        or
+       (resi 3 and segid B)
+) 2.0 2.0 0.0
+assign (resi 131 and segid A)
+(
+       (resi 1 and segid B)
+        or
+       (resi 2 and segid B)
+        or
+       (resi 3 and segid B)
+) 2.0 2.0 0.0
+assign (resi 132 and segid A)
+(
+       (resi 1 and segid B)
+        or
+       (resi 2 and segid B)
+        or
+       (resi 3 and segid B)
+) 2.0 2.0 0.0
+assign (resi 533 and segid A)
+(
+       (resi 1 and segid B)
+        or
+       (resi 2 and segid B)
+        or
+       (resi 3 and segid B)
+) 2.0 2.0 0.0
+assign (resi 534 and segid A)
+(
+       (resi 1 and segid B)
+        or
+       (resi 2 and segid B)
+        or
+       (resi 3 and segid B)
+) 2.0 2.0 0.0
+assign (resi 535 and segid A)
+(
+       (resi 1 and segid B)
+        or
+       (resi 2 and segid B)
+        or
+       (resi 3 and segid B)
+) 2.0 2.0 0.0
+assign (resi 1 and segid B)
+(
+       (resi 161 and segid A)
+        or
+       (resi 130 and segid A)
+        or
+       (resi 131 and segid A)
+        or
+       (resi 132 and segid A)
+        or
+       (resi 533 and segid A)
+        or
+       (resi 534 and segid A)
+        or
+       (resi 535 and segid A)
+) 2.0 2.0 0.0
+assign (resi 2 and segid B)
+(
+       (resi 161 and segid A)
+        or
+       (resi 130 and segid A)
+        or
+       (resi 131 and segid A)
+        or
+       (resi 132 and segid A)
+        or
+       (resi 533 and segid A)
+        or
+       (resi 534 and segid A)
+        or
+       (resi 535 and segid A)
+) 2.0 2.0 0.0
+assign (resi 3 and segid B)
+(
+       (resi 161 and segid A)
+        or
+       (resi 130 and segid A)
+        or
+       (resi 131 and segid A)
+        or
+       (resi 132 and segid A)
+        or
+       (resi 533 and segid A)
+        or
+       (resi 534 and segid A)
+        or
+       (resi 535 and segid A)
+) 2.0 2.0 0.0
