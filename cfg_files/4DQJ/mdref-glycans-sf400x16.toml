@@ -1,0 +1,46 @@
+# ===========================================================
+#      Protein-glycan docking with HADDOCK3
+#
+#  This workflow will generate an ensemble of conformations 
+#  for a glycan (starting from the conformation(s) generated
+#  with GLYCAM), which is then used for docking.
+# ===========================================================
+
+
+#general section
+
+mode = "batch"
+queue = "short"
+queue_limit = 100
+concat = 5
+run_dir = "run_mdref-glycans-sf400x16"
+
+# molecules to be subjected to mdref
+molecules = [
+	"../../pdb_files/4DQJ/4DQJ_l_u.pdb"
+]
+
+[topoaa]
+
+[mdref]
+nfle1 = 1
+fle_sta_1_1 = 1
+fle_end_1_1 = 7
+sampling_factor = 400
+nemsteps = 200
+waterheatsteps = 100
+watersteps = 20000
+watercoolsteps = 8000
+
+[rmsdmatrix]
+resdic_B = [1,2,3,4,5,6,7]
+
+[clustrmsd]
+criterion = 'maxclust'
+linkage = 'average'
+n_clusters = 20
+
+[seletopclusts]
+top_models = 1
+top_cluster = 20
+

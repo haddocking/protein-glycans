@@ -1,0 +1,46 @@
+# ===========================================================
+#      Protein-glycan docking with HADDOCK3
+#
+#  This workflow will dock a bound glycan to a bound
+#  protein, with van der Waals energy weight increased
+#  from 0.01 to 1.0 in the rigid body haddock
+#  scoring function and tip-ap restraints 
+#  (true-interface-protein, glycan fully passive).
+# ===========================================================
+
+#general section
+
+mode = "mpi"
+ncores = 16
+run_dir = "run_bound_vdw_tip-ap"
+
+# molecules to be docked
+molecules = [
+	"../../pdb_files/3AP9/3AP9_r_b.pdb",
+	"../../pdb_files/3AP9/3AP9_l_b.pdb",
+]
+
+[topoaa] 
+
+[rigidbody]
+ambig_fname = "../../pdb_files/3AP9/3AP9_tip-ap.tbl"
+sampling = 1000 
+w_vdw = 1.0
+
+[caprieval]
+reference_fname = "../../pdb_files/3AP9/3AP9_analysis.pdb"
+
+[rmsdmatrix]
+resdic_A = [ 64 , 66 , 42 , 138 , 44 , 76 , 46 , 83 , 86 , 56 , 62 ] 
+resdic_B = [ 1,  2,  3,  4,  5,    ] 
+
+
+[clustrmsd]
+criterion = 'distance'
+linkage = 'average'
+min_population = 4
+clust_cutoff = 2.5 
+
+[caprieval]
+reference_fname = "../../pdb_files/3AP9/3AP9_analysis.pdb"
+

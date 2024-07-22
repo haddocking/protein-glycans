@@ -1,0 +1,45 @@
+# ===========================================================
+#      Protein-glycan docking with HADDOCK3
+#
+#  This workflow will dock a bound glycan to a bound
+#  protein, with the default haddock scoring function
+#  and ti-aa restraints (true interface on both
+#  protein and glycan).
+# ===========================================================
+
+
+#general section
+
+mode = "mpi"
+ncores = 16
+run_dir = "run_bound_default_ti-aa"
+
+# molecules to be docked
+molecules = [
+	"../../pdb_files/3N17/3N17_r_b.pdb",
+	"../../pdb_files/3N17/3N17_l_b.pdb",
+]
+
+[topoaa] 
+
+[rigidbody]
+ambig_fname = "../../pdb_files/3N17/3N17_ti-aa.tbl"
+sampling = 1000 
+
+[caprieval]
+reference_fname = "../../pdb_files/3N17/3N17_analysis.pdb"
+
+[rmsdmatrix]
+resdic_A = [ 256 , 257 , 258 , 195 , 36 , 197 , 198 , 259 , 9 , 13 , 78 , 15 , 79 , 80 , 113 , 115 , 303 , 307 ] 
+resdic_B = [ 1 , 2 ] 
+
+
+[clustrmsd]
+criterion = 'distance'
+linkage = 'average'
+min_population = 4
+clust_cutoff = 2.5 
+
+[caprieval]
+reference_fname = "../../pdb_files/3N17/3N17_analysis.pdb"
+

@@ -1,0 +1,46 @@
+# ===========================================================
+#      Protein-glycan docking with HADDOCK3
+#
+#  This workflow will dock a bound glycan to a bound
+#  protein, with van der Waals energy weight increased 
+#  from 0.01 to 1.0 in the rigid body haddock 
+#  scoring function and ti-aa restraints (true interface 
+#  on both protein and glycan).
+# ===========================================================
+
+#general section
+
+mode = "mpi"
+ncores = 16
+run_dir = "run_bound_vdw_ti-aa"
+
+# molecules to be docked
+molecules = [
+	"../../pdb_files/1KJL/1KJL_r_b.pdb",
+	"../../pdb_files/1KJL/1KJL_l_b.pdb",
+]
+
+[topoaa] 
+
+[rigidbody]
+ambig_fname = "../../pdb_files/1KJL/1KJL_ti-aa.tbl"
+sampling = 1000 
+w_vdw = 1.0
+
+[caprieval]
+reference_fname = "../../pdb_files/1KJL/1KJL_analysis.pdb"
+
+[rmsdmatrix]
+resdic_A = [ 69 , 72 , 74 , 46 , 48 , 50 , 62 ] 
+resdic_B = [ 1 , 2 ] 
+
+
+[clustrmsd]
+criterion = 'distance'
+linkage = 'average'
+min_population = 4
+clust_cutoff = 2.5 
+
+[caprieval]
+reference_fname = "../../pdb_files/1KJL/1KJL_analysis.pdb"
+
