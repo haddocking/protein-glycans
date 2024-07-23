@@ -5,7 +5,7 @@ short = []
 ll = []
 lb = []
 
-rmsd_file = Path("..", "data", "SF4-allatom.txt")
+rmsd_file = Path("..", "data", "RMSD_glycam_to_bound.txt")
 with open(rmsd_file, "r") as r:
     for ln in r:
         if ln.startswith("short") == True:
@@ -19,7 +19,7 @@ with open(rmsd_file, "r") as r:
 
 data = [short, ll, lb]
 fig, ax = plt.subplots()
-colors = ['red', 'tan', 'lime']
+colors = ['blue', 'red', 'green']
 plots = ax.violinplot(data, showmeans=True, showextrema=False)
 plots['cmeans'].set_colors("black")
 # Set the color of the violin patches
