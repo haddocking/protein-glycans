@@ -2,13 +2,14 @@
 
 This repository contains all data and analysis necessary to reproduce the results reported in [this paper]().
 
+<img src="example_pic.png" alt="drawing" width="600"/>
 The repository contains the following directories
 
 - **analysis**, with all the analysis scripts to generate the figures present in the paper
 
 - **data**, with all the data generated in this study
 
-- **pdb_files**. This directory contains subdirectories for each PDB (relative to the protein-glycan complex). In each pdb_files/PDB/ subdirectory the following files are available:
+- **pdb_files**. This directory contains subdirectories for each PDB (relative to the protein-glycan complex). In each `pdb_files/PDB/` subdirectory the following files are available:
 
   - **154L_r_b.pdb**: protein bound structure
   - **154L_l_b.pdb**: glycan bound structure
@@ -19,7 +20,7 @@ The repository contains the following directories
   - **154L_ti-aa.tbl**: AIRs file, ti-aa restraints (true interface on both protein and glycan)
   - **154L_tip-ap.tbl**: AIRs file, tip-ap restraints (true-interface-protein, glycan fully passive)
 
-- **cfg_files**. It contains subdirectories for each PDB (relative to the protein-glycan complex). In each cfg_files/PDB/ subdirectory the following files are available:
+- **cfg_files**. It contains subdirectories for each PDB (relative to the protein-glycan complex). In each `cfg_files/PDB/` subdirectory the following files are available:
  
   - **bound_default_ti-aa.toml**: bound docking, default haddock scoring function, ti-aa AIRs
   - **bound_vdw_ti-aa.toml**: bound docking, vdW haddock scoring function, ti-aa AIRs
