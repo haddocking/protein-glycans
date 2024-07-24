@@ -11,7 +11,7 @@ parse = argparse.ArgumentParser(description="Makes histogram in .png format")
 parse.add_argument("figname", help = "Provide name for the figure")
 args = parse.parse_args()
 
-data = pd.read_csv('../data/mdref-se3.tsv', delimiter='\t')
+data = pd.read_csv('../data/mdref-SL-SB.tsv', delimiter='\t')
 
 # Use only columns starting from the second one
 data = data.iloc[:, 1:]

@@ -15,13 +15,13 @@ args = parse.parse_args()
 
 
 # Load the data into a pandas DataFrame
-df = pd.read_csv('../data/L3L-scatter.tsv', delimiter='\t')
+df = pd.read_csv('../data/SL-SB-scatter.tsv', delimiter='\t')
 
 # Create a scatter plot
 plt.figure(figsize=(8, 8))
 
-colors=["red"]
-legend_labels = [("LL glycans")]
+colors=["darkblue"]
+legend_labels = [("SL-SB glycans")]
 
 ax = sns.scatterplot(data=df, x='lowest-RSMD-to-REF', y='lowest-RMSD-to-REF-after-clustering', hue='group', palette=colors, legend=False)
 
@@ -42,8 +42,8 @@ legend_patches = [Patch(facecolor=c, label=l) for c, l in zip(colors, legend_lab
 plt.legend(handles=legend_patches, loc="lower right", fontsize=14)
 
 
-plt.xlim(0.0, 3.3)
-plt.ylim(0.0, 3.3)
+plt.xlim(0.0, 1.6)
+plt.ylim(0.0, 1.6)
 
 
 x = np.linspace(*plt.xlim()) 
@@ -56,6 +56,7 @@ ax.yaxis.set_minor_locator(ticker.MultipleLocator(0.1))
 # Adding grid
 ax.grid(which='both', alpha=0.4, linestyle='dashed', linewidth=0.2, color='gray')
 ax.grid(which='minor', alpha=0.4)
+
 
 
 plt.yticks(fontsize = 14)

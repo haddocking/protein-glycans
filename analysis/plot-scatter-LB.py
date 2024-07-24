@@ -15,13 +15,13 @@ args = parse.parse_args()
 
 
 # Load the data into a pandas DataFrame
-df = pd.read_csv('../data/SE3-scatter.tsv', delimiter='\t')
+df = pd.read_csv('../data/LB-scatter.tsv', delimiter='\t')
 
 # Create a scatter plot
 plt.figure(figsize=(8, 8))
 
-colors=["darkblue"]
-legend_labels = [("SL-SB glycans")]
+colors=["green"]
+legend_labels = [("LB glycans")]
 
 ax = sns.scatterplot(data=df, x='lowest-RSMD-to-REF', y='lowest-RMSD-to-REF-after-clustering', hue='group', palette=colors, legend=False)
 
@@ -42,8 +42,8 @@ legend_patches = [Patch(facecolor=c, label=l) for c, l in zip(colors, legend_lab
 plt.legend(handles=legend_patches, loc="lower right", fontsize=14)
 
 
-plt.xlim(0.0, 1.6)
-plt.ylim(0.0, 1.6)
+plt.xlim(0.0, 2.5)
+plt.ylim(0.0, 2.5)
 
 
 x = np.linspace(*plt.xlim()) 

@@ -11,7 +11,7 @@ parse = argparse.ArgumentParser(description="Makes histogram in .png format")
 parse.add_argument("figname", help = "Provide name for the figure")
 args = parse.parse_args()
 
-data = pd.read_csv('../data/mdref-l3l.tsv', delimiter='\t')
+data = pd.read_csv('../data/mdref-LB.tsv', delimiter='\t')
 
 # Use only columns starting from the second one
 data = data.iloc[:, 1:]
@@ -51,10 +51,10 @@ else:
     plt.xticks(fontsize=9)  
     plt.ylabel("RMSD ($\mathrm{\AA}$)", fontsize=9)
     plt.xlabel(" ")
-    plt.ylim(0.0, 4.0)
-    [plt.axhline(y=i, color="grey", linestyle="dotted") for i in [0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5]]
+    plt.ylim(0.0, 3.0)
+    [plt.axhline(y=i, color="grey", linestyle="dotted") for i in [0.5, 1.0, 1.5, 2.0, 2.5]]
 
-    true_title = "long linear (LL) glycans"
+    true_title = "long branched (LB) glycans"
     plt.title(true_title, fontsize=10)
 
 # savefig
