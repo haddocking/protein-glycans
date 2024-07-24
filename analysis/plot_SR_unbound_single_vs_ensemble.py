@@ -57,14 +57,14 @@ ll_pdbs = ["6MSY", "2J72", "2J73", "3ACH", "4XUR", "1KQZ", "1LMQ", "1UU6", "2BOF
 lb_pdbs = ["1OH4", "2VUZ", "3AP9", "2J1T", "2XJR", "3ZWE", "2Z8L"]
 
 # unbound overall
-unbound_vdw_flex = capri_ss.loc[(capri_ss["run"] == "run_unbound_vdw_na_clust") & (capri_ss["capri"] == "08_caprieval")]
+unbound_vdw_flex = capri_ss.loc[(capri_ss["run"] == "run_unbound_vdw_tip-ap_clust") & (capri_ss["capri"] == "08_caprieval")]
 unbound_vdw_flex_short = unbound_vdw_flex.loc[unbound_vdw_flex["pdb"].isin(short_pdbs)]
 unbound_vdw_flex_ll = unbound_vdw_flex.loc[unbound_vdw_flex["pdb"].isin(ll_pdbs)]
 unbound_vdw_flex_lb = unbound_vdw_flex.loc[unbound_vdw_flex["pdb"].isin(lb_pdbs)]
 
 
 # now something about the ensemble
-unbound_ens_vdw_flex = capri_ss.loc[(capri_ss["run"] == "run_unbound_ens_vdw_na_clust150") & (capri_ss["capri"] == "08_caprieval")]
+unbound_ens_vdw_flex = capri_ss.loc[(capri_ss["run"] == "run_unbound_ens_vdw_tip-ap_clust") & (capri_ss["capri"] == "08_caprieval")]
 unbound_ens_vdw_flex_short = unbound_ens_vdw_flex.loc[unbound_ens_vdw_flex["pdb"].isin(short_pdbs)]
 unbound_ens_vdw_flex_ll = unbound_ens_vdw_flex.loc[unbound_ens_vdw_flex["pdb"].isin(ll_pdbs)]
 unbound_ens_vdw_flex_lb = unbound_ens_vdw_flex.loc[unbound_ens_vdw_flex["pdb"].isin(lb_pdbs)]

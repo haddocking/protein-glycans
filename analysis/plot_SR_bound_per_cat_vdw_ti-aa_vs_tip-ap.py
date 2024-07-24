@@ -44,8 +44,8 @@ def print_formatted_list(label, values, precision=2):
 
 
 # bound, 1st line ti-aa, 2nd line tip-ap. columns left to right sl, sb, ll, lb
-bound_vdw_ti = capri_ss.loc[(capri_ss["run"] == "run_bound_vdw_ti") & (capri_ss["capri"] == "2_caprieval")]
-bound_vdw_na = capri_ss.loc[(capri_ss["run"] == "run_bound_vdw_na") & (capri_ss["capri"] == "2_caprieval")]
+bound_vdw_ti = capri_ss.loc[(capri_ss["run"] == "run_bound_vdw_ti-aa") & (capri_ss["capri"] == "2_caprieval")]
+bound_vdw_na = capri_ss.loc[(capri_ss["run"] == "run_bound_vdw_tip-ap") & (capri_ss["capri"] == "2_caprieval")]
 
 # categories
 sl_pdbs= ["3OAU", "1WU6", "3N17", "1W6P", "2IT6", "3VV1", "4R9F", "5T4Z", "2XOM", "4QPW", "4D5I", "2G7C", "2YP3", "5HZB", "6N35", "1C1L", "1I3H", "1KJL", "1PWB", "1SLT", "2RDK", "2ZKN", "3G83", "3P5H", "5GAL", "5YRG", "6H9Y", "2J1V", "2Y6G", "154L","3AOF", "5AWQ", "5JU9", "1QFO", "2VXJ", "3NV4", "4MBY", "6HA0" ]

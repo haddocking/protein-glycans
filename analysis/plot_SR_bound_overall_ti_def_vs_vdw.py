@@ -41,8 +41,8 @@ def print_formatted_list(label, values, precision=2):
 
 
 # bound default vs vdw (true interface)
-bound_default_ti = capri_ss.loc[(capri_ss["run"] == "run_bound_default_ti") & (capri_ss["capri"] == "2_caprieval")]
-bound_vdw_ti = capri_ss.loc[(capri_ss["run"] == "run_bound_vdw_ti") & (capri_ss["capri"] == "2_caprieval")]
+bound_default_ti = capri_ss.loc[(capri_ss["run"] == "run_bound_default_ti-aa") & (capri_ss["capri"] == "2_caprieval")]
+bound_vdw_ti = capri_ss.loc[(capri_ss["run"] == "run_bound_vdw_ti-aa") & (capri_ss["capri"] == "2_caprieval")]
 
 width = 0.75
 
@@ -130,8 +130,8 @@ plt.close()
 # now print the same for the clusters
 print("\nCLUSTERS\n")
 
-clt_bound_default_ti = capri_clt.loc[(capri_clt["run"] == "run_bound_default_ti") & (capri_clt["capri"] == "5_caprieval")]
-clt_bound_vdw_ti = capri_clt.loc[(capri_clt["run"] == "run_bound_vdw_ti") & (capri_clt["capri"] == "5_caprieval")]
+clt_bound_default_ti = capri_clt.loc[(capri_clt["run"] == "run_bound_default_ti-aa") & (capri_clt["capri"] == "5_caprieval")]
+clt_bound_vdw_ti = capri_clt.loc[(capri_clt["run"] == "run_bound_vdw_ti-aa") & (capri_clt["capri"] == "5_caprieval")]
 ns_clust_rigid = [1,10,20,30,40,50]
 tns_clust_rigid = [f"T{n}" for n in ns_clust_rigid]
 
@@ -203,5 +203,5 @@ for y in y_values:
 plt.subplots_adjust(top=0.90)
 
 #plt.tight_layout()
-plt.savefig("figures/SR_bound_overall_ti_def_vs_vdw_clt.png", dpi=400, bbox_inches="tight")
+plt.savefig("figures/SR_bound_overall_ti_def_vs_vdw_clt.png", dpi=1200, bbox_inches="tight")
 plt.close()

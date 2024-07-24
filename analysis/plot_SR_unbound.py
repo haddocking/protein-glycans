@@ -46,10 +46,10 @@ def print_formatted_list(label, values, precision=2):
 
 
 # unbound overall
-unbound_vdw_flex = capri_ss.loc[(capri_ss["run"] == "run_unbound_vdw_na_clust") & (capri_ss["capri"] == "08_caprieval")]
-unbound_vdw_rigid = capri_ss.loc[(capri_ss["run"] == "run_unbound_vdw_na_clust") & (capri_ss["capri"] == "02_caprieval")]
-unbound_vdw_flex_clust = capri_clt.loc[(capri_clt["run"] == "run_unbound_vdw_na_clust") & (capri_clt["capri"] == "11_caprieval")]
-unbound_vdw_rigid_clust = capri_clt.loc[(capri_clt["run"] == "run_unbound_vdw_na_clust") & (capri_clt["capri"] == "06_caprieval")]
+unbound_vdw_flex = capri_ss.loc[(capri_ss["run"] == "run_unbound_vdw_tip-ap_clust") & (capri_ss["capri"] == "08_caprieval")]
+unbound_vdw_rigid = capri_ss.loc[(capri_ss["run"] == "run_unbound_vdw_tip-ap_clust") & (capri_ss["capri"] == "02_caprieval")]
+unbound_vdw_flex_clust = capri_clt.loc[(capri_clt["run"] == "run_unbound_vdw_tip-ap_clust") & (capri_clt["capri"] == "11_caprieval")]
+unbound_vdw_rigid_clust = capri_clt.loc[(capri_clt["run"] == "run_unbound_vdw_tip-ap_clust") & (capri_clt["capri"] == "06_caprieval")]
 
 # unbound short
 short_pdbs = ["6N35", "1C1L", "1I3H", "1KJL", "1PWB", "1SLT", "2RDK", "2ZKN", "3G83", "3P5H",
