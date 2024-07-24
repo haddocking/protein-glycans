@@ -22,9 +22,9 @@ The repository contains the following directories
 - **cfg_files**. It contains subdirectories for each PDB (relative to the protein-glycan complex). In each cfg_files/PDB/ subdirectory the following files are available:
  
   - **bound_default_ti-aa.toml**: bound docking, default haddock scoring function, ti-aa AIRs
-  - **bound_vdw_ti-aa.toml**    # bound docking, vdW haddock scoring function, ti-aa AIRs
-  - **bound_vdw_tip-ap.toml**        # bound docking, vdW haddock scoring function, tip-ap AIRs
+  - **bound_vdw_ti-aa.toml**: bound docking, vdW haddock scoring function, ti-aa AIRs
+  - **bound_vdw_tip-ap.toml**: bound docking, vdW haddock scoring function, tip-ap AIRs
 
-  - **unbound_vdw_tip-ap_clust.toml**  # unbound docking, vdW haddock scoring function, tip-ap AIRs
-  - **unbound_ens_vdw_tip-ap_clust.toml** # ensemble docking, vdW haddock scoring function, tip-ap AIRs
-  - **mdref-glycans-sf400x16.toml**   # sampling of glycan conformations using mdref
+  - **unbound_vdw_tip-ap_clust.toml**: unbound docking, vdW haddock scoring function, tip-ap AIRs
+  - **unbound_ens_vdw_tip-ap_clust.toml**: ensemble docking, vdW haddock scoring function, tip-ap AIRs
+  - **mdref-glycans-sf400x16.toml**: sampling of glycan conformations using mdref
