@@ -1,6 +1,6 @@
 # Protein-glycan docking with HADDOCK3
 
-This repository contains all data and analysis necessary to reproduce the results reported in [this paper]().
+This repository contains all data and analysis necessary to reproduce the results reported in [this paper](https://www.biorxiv.org/content/10.1101/2024.07.31.605986v1).
 
 <img src="example_pic.png" alt="drawing" width="600"/>
 The repository contains the following directories
