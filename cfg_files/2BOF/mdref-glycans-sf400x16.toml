@@ -23,9 +23,9 @@ molecules = [
 [topoaa]
 
 [mdref]
-nfle1 = 1
-fle_sta_1_1 = 1
-fle_end_1_1 = 7
+fle_sta_1 = 1
+fle_end_1 = 7
+fle_seg_1 = "B"
 sampling_factor = 400
 nemsteps = 200
 waterheatsteps = 100
